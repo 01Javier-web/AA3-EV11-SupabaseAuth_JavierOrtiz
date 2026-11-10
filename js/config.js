@@ -8,6 +8,6 @@
  * "service_role", porque este archivo se ejecuta en el navegador y se sube a GitHub.
  */
 window.APP_CONFIG = Object.freeze({
-  SUPABASE_URL: 'https://TU-PROYECTO.supabase.co',
-  SUPABASE_ANON_KEY: 'TU_ANON_KEY'
+  SUPABASE_URL: 'https://vnvxzwuzudydffqwpjue.supabase.co',
+  SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZudnh6d3V6dWR5ZGZmcXdwanVlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTQzNDIxOTgsImV4cCI6MjEwOTkxODE5OH0.X2-QAiROHTNTS7IjvBDdEej1u5-kCaEDLw1UarAYHwQ'
 });
