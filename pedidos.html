@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mekatos Pedidos · Panel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="pedidos">
+  <header class="barra">
+    <div class="barra__marca"><span aria-hidden="true">🥟</span> Mekatos <span>Pedidos</span></div>
+    <div class="barra__usuario">
+      <div>
+        <strong id="usuario-email">—</strong>
+        <small id="usuario-acceso"></small>
+      </div>
+      <button id="btn-logout" class="btn btn--claro" type="button">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <p id="mensaje" class="mensaje mensaje--flotante" role="status" hidden></p>
+
+  <main id="contenido" class="panel" hidden>
+    <section>
+      <h2>Catálogo</h2>
+      <div id="catalogo" class="catalogo"></div>
+    </section>
+
+    <aside class="pedido">
+      <h2>Tu pedido</h2>
+      <ul id="carrito" class="carrito"></ul>
+      <div class="pedido__total">
+        <span>Total</span>
+        <strong id="total">$0</strong>
+      </div>
+      <button id="btn-confirmar" class="btn btn--primario" type="button" disabled>Confirmar pedido</button>
+    </aside>
+  </main>
+
+  <footer class="pie">Página protegida: solo visible con sesión activa de Supabase.</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <!-- Modelos -->
+  <script src="js/models/AuthModel.js"></script>
+  <script src="js/models/PedidoModel.js"></script>
+  <!-- Vista -->
+  <script src="js/views/PedidosView.js"></script>
+  <!-- Controlador -->
+  <script src="js/controllers/PedidosController.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

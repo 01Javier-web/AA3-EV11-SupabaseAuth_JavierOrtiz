@@ -1,0 +1,13 @@
+{
+  "name": "aa3-ev11-supabase-auth-mekatos",
+  "version": "1.0.0",
+  "description": "AA3-EV11 - Integración de autenticación de usuarios con Supabase Auth (MVC) - Mekatos Pedidos",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "coverage": "node --test --experimental-test-coverage tests/*.test.js",
+    "start": "npx --yes http-server@14.1.1 -p 5500 -c-1"
+  },
+  "author": "Javier Ortiz",
+  "license": "MIT"
+}
